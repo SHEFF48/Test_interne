@@ -5,6 +5,8 @@
   justify-content: center;
   gap: 31px;
 
+  margin-bottom: 157px;
+
   .top {
     @include flex-row-between;
     align-items: center;

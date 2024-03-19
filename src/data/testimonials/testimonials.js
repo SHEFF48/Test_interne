@@ -11,14 +11,14 @@ const testimonials = [
     description: "Дуже задоволений якістю обслуговування і самою продукцією. Купували термобілизну у подарунок, друзі...",
     userName: "Жора Ремінгтон",
     userImage: "./images/products/product_1.jpeg",
-    raiting: 5
+    raiting: 2
   },
   {
     id: 2,
     description: "Дуже задоволений якістю обслуговування і самою продукцією. Купували термобілизну у подарунок, друзі...",
     userName: "Жора Ремінгтон",
     userImage: "./images/products/product_1.jpeg",
-    raiting: 5
+    raiting: 4
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const testimonials = [
     description: "Дуже задоволений якістю обслуговування і самою продукцією. Купували термобілизну у подарунок, друзі...",
     userName: "Жора Ремінгтон",
     userImage: "./images/products/product_1.jpeg",
-    raiting: 5
+    raiting: 1
   },
   {
     id: 5,
