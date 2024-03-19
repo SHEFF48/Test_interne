@@ -1,0 +1,9 @@
+.list {
+  @include flex-row-between;
+  gap: 30px;
+
+  .item {
+    width: 370px;
+    overflow: hidden;
+  }
+}

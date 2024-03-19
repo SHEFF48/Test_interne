@@ -1,0 +1,18 @@
+.menuList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+
+  &Item {
+    list-style: none;
+    color: rgb(52, 52, 52);
+    a {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+    }
+  }
+}

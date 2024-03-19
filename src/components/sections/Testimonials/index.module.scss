@@ -1,0 +1,36 @@
+.container {
+  @include container;
+  @include flex-col;
+
+  justify-content: center;
+  gap: 31px;
+
+  .top {
+    @include flex-row-between;
+    align-items: center;
+
+    .title {
+      @include h3;
+    }
+
+    .navigation {
+      @include flex-row-between;
+      align-items: center;
+      gap: 30px;
+
+      .pagesCount {
+        @include flex-row-between;
+        align-items: center;
+        gap: 8px;
+
+        @include main-text;
+      }
+
+      .controls {
+        @include flex-row-between;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}

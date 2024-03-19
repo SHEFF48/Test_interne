@@ -1,0 +1,120 @@
+@use "scss-reset/reset";
+
+$black-100: #000;
+$black-80: #343434;
+$black-60: #626262;
+$black-40: #959595;
+$black-20: #ccc;
+$white: #fff;
+$black-10: #e8e8e8;
+$green: #4aaa4e;
+
+$mainColor: $black-80;
+$secondaryColor: $black-60;
+$priceColor: $green;
+
+$mainFontFamily: "Roboto", sans-serif;
+$secondaryFontFamily: "Inter", sans-serif;
+$thirdFontFamily: "Montserrat", sans-serif;
+
+@mixin main-text {
+  color: $secondaryColor;
+  font-family: $mainFontFamily;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin little-text {
+  color: $white;
+  font-family: $mainFontFamily;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin h2 {
+  color: $mainColor;
+  font-family: $mainFontFamily;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  font-variant-caps: small-caps;
+}
+
+@mixin h3 {
+  color: $mainColor;
+  font-family: $mainFontFamily;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  font-variant-caps: small-caps;
+}
+
+@mixin h4 {
+  /* H4 */
+  color: $mainColor;
+  font-family: $mainFontFamily;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  font-variant-caps: small-caps;
+}
+
+@mixin container {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex-col-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin price {
+  color: $priceColor;
+  font-family: $mainFontFamily;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
+}

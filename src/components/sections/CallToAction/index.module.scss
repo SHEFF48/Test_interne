@@ -1,0 +1,43 @@
+.ctaSection {
+  width: 100%;
+
+  .container {
+    @include container;
+    @include flex-row-between;
+
+    .information {
+      @include flex-col;
+      justify-content: center;
+      align-items: start;
+      gap: 40px;
+
+      .content {
+        @include flex-col;
+        justify-content: center;
+        align-items: start;
+        gap: 30px;
+
+        width: 570px;
+
+        .title {
+          @include h2;
+          line-height: 50px;
+        }
+        .description {
+          @include main-text;
+          line-height: 24px;
+
+          width: 422px;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      width: 570px;
+      height: 381px;
+      background-color: beige;
+      overflow: hidden;
+    }
+  }
+}

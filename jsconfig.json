@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "@/components/*": ["./components/*"],
+      "@/pages/*": ["./pages/*"],
+      "@/routes/*": ["./routes/*"],
+      "@/layouts/*": ["./components/layouts/*"],
+      "@/screens/*": ["./components/screens/*"],
+      "@/sections/*": ["./components/sections/*"],
+      "@/blocks/*": ["./components/blocks/*"],
+      "@/ui/*": ["./components/ui/*"],
+      "@/custom-components/*": ["./components/custom/*"]
+    }
+  }
+}

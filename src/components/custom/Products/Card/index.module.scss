@@ -1,0 +1,34 @@
+.card {
+  @include flex-col;
+  gap: 15px;
+
+  width: 370px;
+
+  .image {
+    position: relative;
+    width: 100%;
+    height: 433px;
+
+    background-color: bisque;
+    overflow: hidden;
+  }
+
+  .info {
+    .title {
+      @include h4;
+    }
+
+    .attributes {
+      @include flex-col;
+      margin-top: 20px;
+
+      .attribute {
+        @include main-text;
+      }
+    }
+
+    .productPrice {
+      @include price;
+    }
+  }
+}
