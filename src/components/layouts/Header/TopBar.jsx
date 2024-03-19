@@ -1,12 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 import style from "./TopBar.module.scss";
+import { formatPhoneNumber } from "@/libs/helpers";
 
 const TopBar = () => {
+  const phoneNumber = "0989000909";
+  const formattedPhoneNumber = formatPhoneNumber(phoneNumber);
+
   return (
     <section className={style.topBar}>
       <div className={style.container}>
         <div className={style.contacts}>
-          <a href="tel:+">098 900 09 09</a>
+          <a href={`tel:${phoneNumber}`}>{formattedPhoneNumber}</a>
           <a href="help" target="_blank" rel="noopener noreferrer">
             Допомога
           </a>
@@ -17,6 +22,10 @@ const TopBar = () => {
       </div>
     </section>
   );
+};
+
+TopBar.propTypes = {
+  phoneNumber: PropTypes.string.isRequired,
 };
 
 export default TopBar;

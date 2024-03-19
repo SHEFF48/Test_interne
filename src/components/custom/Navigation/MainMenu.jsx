@@ -1,15 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import style from "./MainMenu.module.scss";
 
-const menu = [
-  { id: 0, title: "новинки", url: "/" },
-  { id: 1, title: "чоловіки", url: "/" },
-  { id: 2, title: "жінки", url: "/" },
-  { id: 3, title: "аксесуари", url: "/" },
-  { id: 4, title: "акції", url: "/" },
-];
-
-const MainMenu = ({}) => {
+const MainMenu = ({ menu }) => {
   return (
     <ul className={style.menuList}>
       {menu.map((menuItem) => (
@@ -19,6 +12,16 @@ const MainMenu = ({}) => {
       ))}
     </ul>
   );
+};
+
+MainMenu.propTypes = {
+  menu: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default MainMenu;

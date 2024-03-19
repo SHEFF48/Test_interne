@@ -1,23 +1,52 @@
 import React from "react";
+import PropTypes from "prop-types";
 import style from "./index.module.scss";
 
 const Slider = ({ items }) => {
+  if (!items || items.length === 0) {
+    return null;
+  }
+
+  const currentItem = items[0];
+
+  if (!currentItem) {
+    return null;
+  }
+
+  const { title, subtitle, offer, image } = currentItem;
+
   return (
     <div className={style.slider}>
       <div className={style.container}>
         <div className={style.titleBlock}>
-          <h1 className={style.title}>{items[0]?.title}</h1>
-          <p className={style.subtitle}>{items[0]?.subtitle}</p>
+          <h1 className={style.title}>{title}</h1>
+          <p className={style.subtitle}>{subtitle}</p>
         </div>
-        <div className={style.offerBlock}>
-          <p className={style.title}>{items[0]?.offer?.title}</p>
-          <p className={style.subtitle}>{items[0]?.offer?.subtitle}</p>
-        </div>
+        {offer && (
+          <div className={style.offerBlock}>
+            <p className={style.title}>{offer.title}</p>
+            <p className={style.subtitle}>{offer.subtitle}</p>
+          </div>
+        )}
       </div>
-
-      <img className={style.slideImage} src={items[0]?.image} alt="" />
+      <div className={style.pagination}>-</div>
+      {image && <img className={style.slideImage} src={image} alt="" />}
     </div>
   );
+};
+
+Slider.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      subtitle: PropTypes.string.isRequired,
+      offer: PropTypes.shape({
+        title: PropTypes.string,
+        subtitle: PropTypes.string,
+      }),
+      image: PropTypes.string,
+    })
+  ),
 };
 
 export default Slider;

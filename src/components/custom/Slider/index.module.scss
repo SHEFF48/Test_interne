@@ -1,7 +1,7 @@
 .slider {
   position: relative;
   width: 100%;
-  height: 489px;
+  height: auto;
   background-color: $black-40;
   overflow: hidden;
 
@@ -9,58 +9,58 @@
     @include flex-row;
     justify-content: space-evenly;
     align-items: center;
+    height: 489px;
+    overflow: hidden;
 
-    height: 100%;
-  }
+    .titleBlock {
+      @include flex-col;
+      gap: 40px;
+      position: relative;
+      width: 470px;
+      z-index: 10;
 
-  .titleBlock {
-    @include flex-col;
-    gap: 40px;
-    position: relative;
-    width: 470px;
-    z-index: 10;
+      .title {
+        font-family: $secondaryFontFamily;
+        font-weight: 900;
+        font-size: 64px;
+        color: $white;
+      }
 
-    .title {
-      font-family: $secondaryFontFamily;
-      font-weight: 900;
-      font-size: 64px;
-      color: $white;
+      .subtitle {
+        font-family: $secondaryFontFamily;
+        font-weight: 300;
+        font-size: 64px;
+        color: $white;
+      }
     }
 
-    .subtitle {
-      font-family: $secondaryFontFamily;
-      font-weight: 300;
-      font-size: 64px;
-      color: $white;
-    }
-  }
+    .offerBlock {
+      @include flex-col;
+      gap: 20px;
+      position: relative;
+      width: 470px;
+      z-index: 10;
 
-  .offerBlock {
-    @include flex-col;
-    gap: 20px;
-    position: relative;
-    width: 470px;
-    z-index: 10;
+      .title {
+        padding: 15px 10px 15px 10px;
+        color: $white;
+        font-family: $secondaryFontFamily;
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        text-align: center;
+        backdrop-filter: blur(30px);
+        background: rgba(255, 255, 255, 0.3);
+      }
 
-    .title {
-      padding: 15px 10px 15px 10px;
-      color: $white;
-      font-family: $secondaryFontFamily;
-      font-size: 40px;
-      font-weight: 300;
-      letter-spacing: 0px;
-      text-align: center;
-      backdrop-filter: blur(30px);
-      background: rgba(255, 255, 255, 0.3);
-    }
-
-    .subtitle {
-      color: $white;
-      font-family: $secondaryFontFamily;
-      font-size: 20px;
-      font-weight: 400;
-      letter-spacing: 0px;
-      text-align: center;
+      .subtitle {
+        color: $white;
+        font-family: $secondaryFontFamily;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        text-align: center;
+      }
     }
   }
 
@@ -74,5 +74,13 @@
     width: 100%;
     height: auto;
     z-index: 1;
+  }
+
+  .pagination {
+    position: relative;
+    background-color: $white;
+    width: 100%;
+    height: 25px;
+    z-index: 10;
   }
 }

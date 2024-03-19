@@ -1,0 +1,18 @@
+.starRating {
+  @include flex-row;
+  justify-content: start;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+}
+
+.halfStar {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+}

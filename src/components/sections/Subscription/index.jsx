@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Subscription = () => {
   return (
@@ -14,5 +15,7 @@ const Subscription = () => {
     </section>
   );
 };
+
+Subscription.propTypes = {};
 
 export default Subscription;

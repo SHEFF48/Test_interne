@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./index.module.scss";
+import StarRating from "@/components/custom/StarRaiting";
 
 const TestimonialsCard = ({
   id,
@@ -15,7 +16,9 @@ const TestimonialsCard = ({
           <img src={userImage} alt={userName} />
         </div>
         <div className={style.userInfo}>
-          <div className={style.raiting}>{raiting}</div>
+          <div className={style.raiting}>
+            <StarRating rating={raiting} />
+          </div>
           <div className={style.userName}>{userName}</div>
         </div>
       </div>

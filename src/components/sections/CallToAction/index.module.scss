@@ -1,6 +1,15 @@
 .ctaSection {
   width: 100%;
 
+  .button {
+    @include main-text;
+    border-radius: 15px;
+    background: #000;
+    color: $white;
+    padding: 20px 35px 20px 35px;
+    text-align: center;
+  }
+
   .container {
     @include container;
     @include flex-row-between;

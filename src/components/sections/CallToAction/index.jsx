@@ -1,6 +1,12 @@
+import PropTypes from "prop-types";
+import Button from "@/components/ui/Button";
 import style from "./index.module.scss";
 
 const CallToAction = () => {
+  const clickHandler = () => {
+    console.log("CTA Button click");
+  };
+
   return (
     <section className={style.ctaSection}>
       <div className={style.container}>
@@ -14,7 +20,9 @@ const CallToAction = () => {
             термобілизни “Big warm”`}
             </p>
           </div>
-          <button>До каталогу</button>
+          <Button className={style.button} handleClick={clickHandler}>
+            До каталогу
+          </Button>
         </div>
         <div className={style.image}>
           <img src="./images/cta/image.jpeg" alt="cta" />
@@ -22,6 +30,10 @@ const CallToAction = () => {
       </div>
     </section>
   );
+};
+
+CallToAction.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default CallToAction;

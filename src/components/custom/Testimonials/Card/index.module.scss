@@ -28,6 +28,7 @@
 
     .userInfo {
       @include flex-col;
+      gap: 15px;
 
       .raiting {
         @include flex-row;

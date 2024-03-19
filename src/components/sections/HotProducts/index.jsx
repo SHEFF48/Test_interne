@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { hotProducts } from "@/data/products/products";
 import { CardsList } from "@/components/custom/Products";
 import style from "./index.module.scss";
@@ -21,6 +22,10 @@ const HotProducts = () => {
       <CardsList products={hotProducts} />
     </div>
   );
+};
+
+HotProducts.propTypes = {
+  products: PropTypes.array.isRequired,
 };
 
 export default HotProducts;

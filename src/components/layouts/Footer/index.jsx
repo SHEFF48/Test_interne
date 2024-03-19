@@ -1,6 +1,14 @@
 import MainMenu from "@/components/custom/Navigation/MainMenu";
 import style from "./index.module.scss";
 
+const menu = [
+  { id: 0, title: "новинки", url: "/" },
+  { id: 1, title: "чоловіки", url: "/" },
+  { id: 2, title: "жінки", url: "/" },
+  { id: 3, title: "аксесуари", url: "/" },
+  { id: 4, title: "акції", url: "/" },
+];
+
 const Footer = () => {
   return (
     <footer>
@@ -77,7 +85,7 @@ const Footer = () => {
       <section className={style.bottom}>
         <div className={style.container}>
           <nav className={style.mainMenu}>
-            <MainMenu />
+            <MainMenu menu={menu} />
           </nav>
 
           <div className={style.copyright}>

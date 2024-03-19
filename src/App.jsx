@@ -1,4 +1,3 @@
-// import "./App.css";
 import "./App.scss";
 
 import Layout from "@/components/layouts/Layout";
