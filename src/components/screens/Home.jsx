@@ -1,5 +1,6 @@
 import {
   CTASection,
+  HeroSection,
   HotProductsSection,
   SubscriptionSection,
   TestimonialsSection,
@@ -8,7 +9,7 @@ import {
 const HomeScreen = () => {
   return (
     <main>
-      <section className="hero">Hero section</section>
+      <HeroSection />
       <CTASection />
       <HotProductsSection />
       <SubscriptionSection />
