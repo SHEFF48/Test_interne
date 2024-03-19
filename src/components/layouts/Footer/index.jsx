@@ -1,3 +1,4 @@
+import MainMenu from "@/components/custom/Navigation/MainMenu";
 import style from "./index.module.scss";
 
 const Footer = () => {
@@ -73,7 +74,17 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <section className={style.bottom}></section>
+      <section className={style.bottom}>
+        <div className={style.container}>
+          <nav className={style.mainMenu}>
+            <MainMenu />
+          </nav>
+
+          <div className={style.copyright}>
+            © 2022 — 2023 IGNAT. Усі права захищені.
+          </div>
+        </div>
+      </section>
     </footer>
   );
 };

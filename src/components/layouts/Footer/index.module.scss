@@ -57,3 +57,27 @@
     }
   }
 }
+
+.bottom {
+  height: 93px;
+  background-color: $mainColor;
+
+  .container {
+    @include container;
+    @include flex-row-between;
+    align-items: center;
+    height: 100%;
+
+    .mainMenu {
+      a {
+        @include main-text;
+        color: $white;
+      }
+    }
+
+    .copyright {
+      @include little-text;
+      color: $white;
+    }
+  }
+}
