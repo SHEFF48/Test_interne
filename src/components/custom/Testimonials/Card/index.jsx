@@ -15,8 +15,8 @@ const TestimonialsCard = ({
           <img src={userImage} alt={userName} />
         </div>
         <div className={style.userInfo}>
-          <div className="raiting">{raiting}</div>
-          <div className="userName">{userName}</div>
+          <div className={style.raiting}>{raiting}</div>
+          <div className={style.userName}>{userName}</div>
         </div>
       </div>
       <div className={style.description}>{description}</div>

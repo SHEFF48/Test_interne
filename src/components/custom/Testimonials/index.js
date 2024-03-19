@@ -1,5 +1,5 @@
-import ProductCard from "./Card";
+import TestimonialsCard from "./Card";
 import CardsList from "./CardsList";
 import ProductsSlider from "./Slider";
 
-export { ProductCard, CardsList, ProductsSlider }
+export { TestimonialsCard, CardsList, ProductsSlider }

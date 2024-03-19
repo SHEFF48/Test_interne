@@ -1,14 +1,14 @@
 import React from "react";
-import ProductCard from "../Card";
 import style from "./index.module.scss";
-// import { hotProducts } from "data/products/products";
+import TestimonialsCard from "../Card";
 
-const CardsList = ({ products = [] }) => {
+const CardsList = ({ testimonials = [] }) => {
+  console.log("testimonials: ", testimonials);
   return (
     <ul className={style.list}>
-      {products?.map((product) => (
-        <li key={product.id} className={style.item}>
-          <ProductCard {...product} />
+      {testimonials?.map((testimonial) => (
+        <li key={testimonial.id} className={style.item}>
+          <TestimonialsCard {...testimonial} />
         </li>
       ))}
     </ul>

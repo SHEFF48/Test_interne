@@ -2,6 +2,7 @@ import {
   CTASection,
   HotProductsSection,
   SubscriptionSection,
+  TestimonialsSection,
 } from "../sections";
 
 const HomeScreen = () => {
@@ -12,6 +13,7 @@ const HomeScreen = () => {
       <CTASection />
       <HotProductsSection />
       <SubscriptionSection />
+      <TestimonialsSection />
 
       <section className="reviews">Reviews</section>
     </main>
