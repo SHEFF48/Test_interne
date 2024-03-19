@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import style from "./index.module.scss";
 
 const ProductCard = ({ id, title, attributes, price, image }) => {
@@ -17,6 +18,17 @@ const ProductCard = ({ id, title, attributes, price, image }) => {
       </div>
     </div>
   );
+};
+
+ProductCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  attributes: PropTypes.shape({
+    destiny: PropTypes.string.isRequired,
+    colorsCount: PropTypes.number.isRequired,
+  }).isRequired,
+  price: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default ProductCard;

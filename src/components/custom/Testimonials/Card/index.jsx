@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import style from "./index.module.scss";
-import StarRating from "@/components/custom/StarRaiting";
+import StarRating from "@/components/custom/StarRating";
 
 const TestimonialsCard = ({
   id,
@@ -25,6 +26,14 @@ const TestimonialsCard = ({
       <div className={style.description}>{description}</div>
     </div>
   );
+};
+
+TestimonialsCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+  userImage: PropTypes.string.isRequired,
+  userName: PropTypes.string.isRequired,
+  raiting: PropTypes.number.isRequired,
 };
 
 export default TestimonialsCard;

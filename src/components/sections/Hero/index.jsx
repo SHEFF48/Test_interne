@@ -1,10 +1,41 @@
 import PropTypes from "prop-types";
-import Slider from "@/components/custom/Slider";
+// import Slide from "@/components/custom/Slide";
 import style from "./index.module.scss";
+import SliderSwiper from "@/components/custom/Slider/swiper";
 
 const sliderItems = [
   {
     id: 0,
+    title: "Швидше. Вище. Сильніше.",
+    subtitle: "Разом із Nike",
+    offer: {
+      title: "Знижки до 40%",
+      subtitle: "Залишився лише тиждень",
+    },
+    image: "./images/hero/slider.jpg",
+  },
+  {
+    id: 1,
+    title: "Швидше. Вище. Сильніше.",
+    subtitle: "Разом із Nike",
+    offer: {
+      title: "Знижки до 40%",
+      subtitle: "Залишився лише тиждень",
+    },
+    image: "./images/hero/slider.jpg",
+  },
+  {
+    id: 2,
+    title: "Швидше. Вище. Сильніше.",
+    subtitle: "Разом із Nike",
+    offer: {
+      title: "Знижки до 40%",
+      subtitle: "Залишився лише тиждень",
+    },
+    image: "./images/hero/slider.jpg",
+  },
+  {
+    id: 3,
     title: "Швидше. Вище. Сильніше.",
     subtitle: "Разом із Nike",
     offer: {
@@ -18,7 +49,8 @@ const sliderItems = [
 const Hero = () => {
   return (
     <section className={style.ctaSection}>
-      <Slider items={sliderItems} />
+      {/* <Slider items={sliderItems} /> */}
+      <SliderSwiper items={sliderItems} />
     </section>
   );
 };

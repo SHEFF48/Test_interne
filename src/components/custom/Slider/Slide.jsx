@@ -17,18 +17,21 @@ const Slider = ({ items }) => {
 
   return (
     <div className={style.slider}>
-      <div className={style.container}>
-        <div className={style.titleBlock}>
-          <h1 className={style.title}>{title}</h1>
-          <p className={style.subtitle}>{subtitle}</p>
-        </div>
-        {offer && (
-          <div className={style.offerBlock}>
-            <p className={style.title}>{offer.title}</p>
-            <p className={style.subtitle}>{offer.subtitle}</p>
+      <div className="slide">
+        <div className={style.container}>
+          <div className={style.titleBlock}>
+            <h1 className={style.title}>{title}</h1>
+            <p className={style.subtitle}>{subtitle}</p>
           </div>
-        )}
+          {offer && (
+            <div className={style.offerBlock}>
+              <p className={style.title}>{offer.title}</p>
+              <p className={style.subtitle}>{offer.subtitle}</p>
+            </div>
+          )}
+        </div>
       </div>
+
       <div className={style.pagination}>-</div>
       {image && <img className={style.slideImage} src={image} alt="" />}
     </div>
