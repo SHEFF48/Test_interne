@@ -3,11 +3,20 @@
   height: 65px;
 
   .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-row-between;
     align-items: center;
     width: 1170px;
     margin: 0 auto;
+
+    a {
+      @include main-text;
+    }
+
+    .user {
+      @include flex-row;
+      justify-content: end;
+      align-items: center;
+      gap: 24px;
+    }
   }
 }

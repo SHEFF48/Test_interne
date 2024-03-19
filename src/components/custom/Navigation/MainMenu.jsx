@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import style from "./MainMenu.module.scss";
 
-const MainMenu = ({ menu }) => {
+const MainMenu = ({ menu, className }) => {
   return (
     <ul className={style.menuList}>
       {menu.map((menuItem) => (
