@@ -1,0 +1,59 @@
+.main {
+  border: 1px solid $black-20;
+  padding-top: 46px;
+  padding-bottom: 52px;
+
+  .container {
+    @include container;
+    @include flex-row-between;
+
+    a {
+      @include main-text-second;
+    }
+
+    .title {
+      @include main-text;
+    }
+
+    .contacts {
+      @include flex-row;
+      gap: 50px;
+
+      height: 100%;
+
+      .info {
+        @include flex-col;
+        justify-content: start;
+        align-items: start;
+        gap: 30px;
+
+        @include main-text-second;
+
+        .contactsList {
+          @include flex-col;
+          justify-content: start;
+          align-items: start;
+          gap: 20px;
+        }
+      }
+
+      .socialIcons {
+        @include flex-col-between;
+      }
+    }
+
+    .menu {
+      @include flex-col;
+      gap: 30px;
+
+      @include main-text;
+
+      .menuList {
+        @include flex-col;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+      }
+    }
+  }
+}

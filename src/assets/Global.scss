@@ -18,7 +18,7 @@ $secondaryFontFamily: "Inter", sans-serif;
 $thirdFontFamily: "Montserrat", sans-serif;
 
 @mixin main-text {
-  color: $secondaryColor;
+  color: $mainColor;
   font-family: $mainFontFamily;
   font-size: 16px;
   font-weight: 400;
