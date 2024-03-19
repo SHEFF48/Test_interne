@@ -26,6 +26,15 @@ $thirdFontFamily: "Montserrat", sans-serif;
   text-align: left;
 }
 
+@mixin main-text-second {
+  color: $secondaryColor;
+  font-family: $mainFontFamily;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
 @mixin little-text {
   color: $white;
   font-family: $mainFontFamily;

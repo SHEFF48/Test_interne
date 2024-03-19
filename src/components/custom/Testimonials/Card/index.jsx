@@ -1,22 +1,27 @@
 import React from "react";
 import style from "./index.module.scss";
 
-const ProductCard = ({ id, title, attributes, price, image }) => {
+const TestimonialsCard = ({
+  id,
+  description,
+  userImage,
+  userName,
+  raiting,
+}) => {
   return (
     <div className={style.card}>
-      <div className={style.image}>
-        <img src={image} alt={title} />
-      </div>
-      <div className={style.info}>
-        <h4 className={style.title}>{title}</h4>
-        <div className={style.attributes}>
-          <p className={style.attribute}>{attributes?.destiny}</p>
-          <p className={style.attribute}>{attributes?.colorsCount}</p>
+      <div className={style.user}>
+        <div className={style.userIcon}>
+          <img src={userImage} alt={userName} />
         </div>
-        <p className={style.productPrice}>{price}</p>
+        <div className={style.userInfo}>
+          <div className="raiting">{raiting}</div>
+          <div className="userName">{userName}</div>
+        </div>
       </div>
+      <div className={style.description}>{description}</div>
     </div>
   );
 };
 
-export default ProductCard;
+export default TestimonialsCard;
